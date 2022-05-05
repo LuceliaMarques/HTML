@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Internet</title>
+
+        <style>
+            .colorfundo{
+                background-color: rgb(255, 240, 207);
+            }
+
+            .colorfundo2{
+                background-color: rgb(254, 201, 1);
+            }
+
+            .colortitulo{
+                color: rgb(0, 103, 138);
+            }
+
+            .colorsubtitulo{
+                color: rgb(1, 160, 199);
+            }
+    
+        </style>
+
+</head>
+
+<body class="colorfundo">
+
+    <center>
+        <h1 class="colortitulo">Plano de internet MegaX</h1>
+        <h2 class="colorsubtitulo"><i>Sempre os Melhores Planos para Você e sua Família!</i></h2>
+    </center>
+    
+    <p>
+        Nós oferecemos uma opção de pacote de dados de internet sob medida para atender às suas necessidades especificas. Para se inscrever, por favor, complete e envie o Formulário de Adesão abaixo. 
+        Se você deseja maiores informações sobre os nossos pacotes ou sobre o processo de aquisição, por favor, especifique as suas questões na caixa de comentário abaixo.
+    </p>
+
+    <!--Inicialização do formulario-->
+    <form action="/url" method="post">
+        
+        <!--Seçao de dados pessoais-->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+                <label for="nome">Nome completo:</label><br />
+                <!--a. campo do tipo text: cria um campo de inserção de texto em uma linha única-->
+                <input type="text" id="nome" name="usuario_nome"/><br />
+            
+                <label for="cpf">CPF:</label><br />
+                <input type="number" id="cpf" name="usuario_cpf"/><br />
+            
+                <label for="datanascimento">Data de nascimento:</label><br />
+                <!--c. campo do tipo date: cria um campo destinado a inserção de datas-->
+                <input type="date" id="datanascimento" name="usuario_datanascimento"/><br />
+        
+                <label for="contato">Telefone:</label><br />
+                <input type="tel" id="contato" name="usuario_contato"/><br />
+            
+                <label for="endereco">Endereço:</label><br />
+                <input type="text" id="endereco" name="usuario_endereco"/><br />
+            
+                <label for="cidade">Cidade:</label><br />
+                <input type="text" id="cidade" name="usuario_cidade"/><br />
+           
+                <label for="estado">Estado:</label><br />
+                <select id="estado" name="usuario_estado"><br />
+                    <optgroup label="Nordeste">
+                        <option value="AL">AL</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="MA">MA</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RN">RN</option>
+                        <option value="SE">SE</option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="AC">AC</option>
+                        <option value="AM">AM</option>
+                        <option value="AP">AP</option>
+                        <option value="PA">PA</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="TO">TO</option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                        <option value="DF">DF</option>
+                        <option value="GO">GO</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                    </optgroup>
+                    <optgroup label="Suldeste">
+                        <option value="ES">ES</option>
+                        <option value="MG">MG</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="PR">PR</option>
+                        <option value="RS">RS</option>
+                        <option value="SC">SC</option>
+                    </optgroup>
+                </select><br />
+
+        </fieldset><br />
+        
+        <fieldset>
+            <legend>Planos de Adesão</legend>
+            <p>
+                <!--d. campo do tipo radio: cria um campo de seleção única;-->
+                <input type="radio" id="opcao1" name="plano" />
+                <label for="opcao1">Padrão (50 Mega por R$200/Ano)</label>
+            </p>
+           
+            <p>
+                <input type="radio" id="opcao2" name="plano" />
+                <label for="opcao2">Prata (100 Mega por R$450/Ano)</label>
+            </p>  
+
+            <p>
+                <input type="radio" id="opcao3" name="plano" />
+                <label for="opcao3">Ouro (200 Mega por R$600/Ano)</label>
+            </p>
+        </fieldset><br />
+
+        <fieldset>
+            <legend>Mais informações</legend>
+
+            <p>Como você ficou sabendo de nós?</p>
+
+            <p>
+                <!--e. campo do tipo checkbox: cria um campo de seleção múltipla;-->
+                <input type="checkbox" id="op1" name="escolha" />
+                <label for="op1">Um amigo</label>
+            </p>
+           
+            <p>
+                <input type="checkbox" id="op2" name="escolha" />
+                <label for="op2">Facebook</label>
+            </p>  
+
+            <p>
+                <input type="checkbox" id="op3" name="escolha" />
+                <label for="op3">Twitter</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="op4" name="escolha" />
+                <label for="op4">Anúncios</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="op5" name="escolha" />
+                <label for="op5">Anúncios</label>
+            </p>
+            <p>
+                <input type="checkbox" id="op6" name="escolha" />
+                <label for="op6">Other:</label>
+            </p>
+
+            <p>Deixe-nos saber se há algo mais que você deseja adicionar ao nosso Formulário de Adesão.</p>
+            
+            <label for="comments">Comentários</label>
+            <textarea id="comments" name="usuario_comments"></textarea>
+
+            <br />
+            <br />
+            <label for="nota">Como você avalia esse formulário de adesão?</label><br />
+            <!--f. campo do tipo range: define um campo de seleção numérico cujo valor exato não é importante.-->
+            <input type="range" min="0" max="10" step="0.01" id="nota" name="nota"><br />
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de Login</legend>
+            
+            <label for="login">Email:</label><br />
+            <input type="email" id="login" name="usuario_login"/><br />
+
+            <label for="senha">Crie uma senha:</label><br />
+            <!--b. campo do tipo password: cria um campo textual para a inserção senhas, cujos caracteres são inibidos por asteriscos;-->
+            <input type="password" id="senha" name="usuario_senha"/><br />
+            
+            <p>
+                <label for="termo">Termos de Serviço</label>
+                <input type="radio" id="termo" name="termo" />
+                <label for="termo">Eu concordo com os <a href="https://thestartlaw.com/termo-de-uso/" target="_blank">Termos de Serviço</a></label>
+            </p><br />
+
+        </fieldset>
+
+        <center>
+            <br />
+            <!--g. campo do tipo reset: cria um botão para limpar todos os campos do formulário;-->
+            <button type="reset">Cancelar</button><br />
+            <br /> 
+            
+            <!--h. campo do tipo submit: cria um botão de confirmação para submissão do formulário;-->
+            <button type="submit">Enviar Formulário de Adesão</button><br />
+            <br />
+        </center>
+        
+    </form>
+
+</body>
+
+<footer class="colorfundo2">
+    <br />
+    <center>
+        <p>
+            <b>MegaX - A melhor operadora de internet.</b>
+        </p>
+        <p>
+            <b>Rua João Alfredo, 1001 - Torres - Recife - PE</b>
+        </p><br />
+    </center>
+</footer>
+
+</html>
